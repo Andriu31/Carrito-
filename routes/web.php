@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/producto', [ProductoController::class, 'index']);
+
+Route::get('/', [ProductoController::class, 'index']);
+Route::post('/save', [ProductoController::class, 'store']);

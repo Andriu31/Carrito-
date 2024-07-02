@@ -466,8 +466,43 @@
                 </div>
               </header><!-- /.page-title-bar -->
               <!-- .page-section -->
-              <div class="page-section">
-                <!-- .section-block -->
+              <div class="card-body">
+                    <!-- .form -->
+                    <form method="post" action="{{url('/save')}}">
+                      @csrf
+                      <!-- .fieldset -->
+                      <fieldset>
+                        <legend>Ingresar Productos</legend> <!-- .form-group -->
+                        <div class="form-group">
+                          <label for="tf1">Producto</label> <input type="text" class="form-control"  name="Producto" aria-describedby="tf1Help" > 
+                        </div><!-- /.form-group -->
+                        <!-- .form-group -->
+                        <div class="form-group">
+                          <label for="tf2">Precio</label>
+                          <div class="custom-number">
+                            <input name="Precio" type="number" class="form-control" min="0" max="10" step="1" value="0" placeholder="Amount (to the nearest dollar)">
+                          </div>
+                        </div><!-- /.form-group -->
+                        <!-- .form-group -->
+                        <div class="form-group">
+                          <label for="tf3">Cantidad</label>
+                          <div class="custom-file">
+                          <input name="Cantidad" type="number" class="form-control"  min="0" max="10" step="1" value="0" placeholder="Amount (to the nearest dollar)">
+                          </div> 
+                        </div> 
+                        <div class="Boton" ><button type="submit">Guardar</button></div>
+                        
+
+                        <!-- /.form-group -->
+                        <!-- .form-group -->
+                        
+                        <!-- /.form-group -->
+                        <!-- .form-group -->
+                      
+                        </div><!-- /.form-group -->
+                      </fieldset><!-- /.fieldset -->
+                    </form><!-- /.form -->
+                  </div><!-- /.card-body -->
           
              
                
